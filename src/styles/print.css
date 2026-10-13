@@ -1,0 +1,223 @@
+/* Face própria para o PDF: o backend de PDF do Chrome descarta a face
+   "Morganite" já usada na tela; uma face separada é embutida normalmente. */
+@font-face {
+  font-family: 'Morganite Print';
+  src: url('/fonts/Morganite-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #1a0000 !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+  body > *:not(#print-root) {
+    display: none !important;
+  }
+  #print-root {
+    display: block !important;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+.pp {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 16mm 16mm 14mm;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 10pt;
+  line-height: 1.45;
+  color: #1a0000;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.pp__band {
+  margin: -16mm -16mm 10mm;
+  padding: 12mm 16mm 10mm;
+  background: linear-gradient(135deg, #560303 0%, #7a0a02 40%, #fb2e0a 100%);
+  color: #fff;
+}
+.pp__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 7.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.pp__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+.pp__brand img {
+  width: 18px;
+  height: 18px;
+}
+.pp__co {
+  margin-top: 9mm;
+  font-family: 'Morganite Print', var(--display);
+  font-weight: 700;
+  font-size: 54pt;
+  line-height: 0.85;
+  text-transform: uppercase;
+}
+.pp__kind {
+  margin-top: 3mm;
+  font-size: 11pt;
+  opacity: 0.85;
+}
+.pp h2 {
+  font-family: var(--mono);
+  font-size: 7.5pt;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #c41e08;
+  margin: 0 0 3mm;
+}
+.pp__inv {
+  display: grid;
+  grid-template-columns: 1fr 64mm;
+  gap: 10mm;
+  align-items: end;
+}
+.pp__lines {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pp__lines td {
+  padding: 2.6mm 0;
+  border-top: 0.3mm solid #eadfdc;
+}
+.pp__lines td:last-child {
+  text-align: right;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.pp__lines small {
+  display: block;
+  font-family: var(--mono);
+  font-size: 6.8pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a6f6b;
+}
+.pp__lines del {
+  display: block;
+  font-size: 8pt;
+  color: #a08b88;
+  font-weight: 400;
+}
+.pp__total {
+  padding: 6mm;
+  border-radius: 4mm;
+  background: #1a0000;
+  color: #fff;
+}
+.pp__total span {
+  font-family: var(--mono);
+  font-size: 7pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.pp__total b {
+  display: block;
+  margin-top: 2mm;
+  font-family: 'Morganite Print', var(--display);
+  font-size: 34pt;
+  line-height: 0.9;
+  color: #fb2e0a;
+}
+.pp__total p {
+  margin-top: 2mm;
+  font-size: 8pt;
+  opacity: 0.75;
+}
+.pp__scope {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10mm;
+  margin-top: 10mm;
+}
+.pp__scope.is-single {
+  grid-template-columns: 1fr;
+}
+.pp__week {
+  margin-bottom: 3.4mm;
+  break-inside: avoid;
+}
+.pp__week b {
+  display: block;
+  font-weight: 600;
+  font-size: 9pt;
+}
+.pp__week b i {
+  font-style: normal;
+  font-family: var(--mono);
+  font-size: 7pt;
+  color: #c41e08;
+  margin-right: 2mm;
+}
+.pp__week p,
+.pp__list li {
+  font-size: 8.4pt;
+  color: #5a4542;
+}
+.pp__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pp__list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 4mm;
+  padding: 1.9mm 0;
+  border-top: 0.3mm solid #eadfdc;
+}
+.pp__list li b {
+  color: #1a0000;
+  font-weight: 500;
+  text-align: right;
+}
+.pp__foot {
+  margin-top: auto;
+  padding-top: 8mm;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 7pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8a6f6b;
+}
+.pp__quote {
+  margin-top: 9mm;
+  font-family: 'Morganite Print', var(--display);
+  font-size: 22pt;
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: #1a0000;
+}
+.pp__quote span {
+  color: #fb2e0a;
+}
