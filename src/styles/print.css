@@ -2,7 +2,7 @@
    "Morganite" já usada na tela; uma face separada é embutida normalmente. */
 @font-face {
   font-family: 'Morganite Print';
-  src: url('/fonts/Morganite-Bold.ttf') format('truetype');
+  src: url('/fonts/Morganite-Bold.ttf?v=2') format('truetype');
   font-weight: 700;
   font-style: normal;
 }

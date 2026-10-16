@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Morganite';
-  src: url('/fonts/Morganite-Bold.ttf') format('truetype');
+  src: url('/fonts/Morganite-Bold.ttf?v=2') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: block;
