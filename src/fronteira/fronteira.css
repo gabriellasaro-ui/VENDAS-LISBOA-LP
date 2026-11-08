@@ -438,11 +438,7 @@ body.is-loading .hero__photo {
     gap: 14px;
   }
   .hero__eyebrow {
-    max-width: 100%;
-  }
-  .hero__eyebrow span {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
   }
   .doors {
     width: 100%;
@@ -466,15 +462,13 @@ body.is-loading .hero__photo {
     gap: 16px 0;
   }
   .proof li {
+    justify-items: center;
     margin-right: 0;
-    padding-right: 12px;
+    padding-inline: 10px;
+    text-align: center;
   }
   .proof li:nth-child(2n) {
     border-right: 0;
-    padding-left: 14px;
-  }
-  .proof li:nth-child(2n + 1) {
-    padding-right: 14px;
   }
 }
 
@@ -551,6 +545,9 @@ body.is-loading .hero__photo {
 @media (max-width: 700px) {
   .meet__grid {
     grid-template-columns: 1fr;
+  }
+  .meet__photo {
+    justify-self: center;
   }
 }
 
@@ -1826,7 +1823,11 @@ body.is-loading .hero__photo {
 @media (max-width: 700px) {
   .guar__grid {
     grid-template-columns: 1fr;
-    justify-items: start;
+    justify-items: center;
+    text-align: center;
+  }
+  .guar__grid > div {
+    justify-items: center;
   }
 }
 @media (prefers-reduced-motion: reduce) {
