@@ -2000,6 +2000,10 @@ body.is-loading .hero__photo {
   display: grid;
   gap: 16px;
 }
+/* Sem isto, o display: grid acima mantém o formulário visível depois do envio */
+.form[hidden] {
+  display: none;
+}
 .form__row {
   display: grid;
   grid-template-columns: 1fr 1fr;

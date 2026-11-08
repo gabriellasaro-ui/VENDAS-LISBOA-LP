@@ -168,6 +168,8 @@ export function initForm(getState: () => State, getCopy: () => Copy) {
       wa.hidden = false
     }
 
+    button.disabled = false
+    label.textContent = k.form.submit
     form.hidden = true
     done.hidden = false
     $('.done__text', done).focus()
