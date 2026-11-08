@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#D9190C" />
+    <title>Lisboa & Co × V4 Company · Brasil ⇄ Paraguai</title>
+    <meta name="description" content="Estruturação Estratégica em 30 dias para vender do Paraguai para o Brasil ou do Brasil para o Paraguai." />
+    <link rel="icon" type="image/svg+xml" href="/logos/v4.svg" />
+    <link rel="preload" href="/fonts/Morganite-Bold.ttf?v=2" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/img/v4-hand.webp" as="image" />
+  </head>
+  <body class="fx is-loading">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"><i></i></div>
+
+    <!-- 1. Barra superior -->
+    <header class="bar">
+      <a href="#topo" class="bar__brand" aria-label="Início">
+        <img src="/logos/v4.svg" alt="" width="36" height="36" />
+        <span class="mono" data-t="bar.brand"></span>
+      </a>
+      <p class="bar__tags mono"><span data-t="bar.tag1"></span><i>·</i><span data-t="bar.tag2"></span></p>
+      <div class="bar__right">
+        <div class="lang" role="radiogroup" data-t-aria="bar.langLabel">
+          <button type="button" role="radio" data-lang="es" lang="es">ES</button>
+          <button type="button" role="radio" data-lang="pt" lang="pt-BR">PT</button>
+          <i class="lang__ink" aria-hidden="true"></i>
+        </div>
+        <a href="#conversa" class="btn btn--sm bar__cta" data-magnetic data-t="bar.cta"></a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. Hero com seletor -->
+      <section class="hero t-light" id="topo" data-door-scope>
+        <div class="wrap hero__grid">
+          <div class="hero__text">
+            <p class="eyebrow hero__eyebrow"><i>V4</i><span data-t="hero.eyebrow"></span></p>
+            <p class="hero__q" data-t="hero.q"></p>
+            <div class="doors" role="radiogroup" data-t-aria="hero.q">
+              <button type="button" role="radio" data-door="a"><span class="doors__flag mono">BR</span><b data-t="hero.doorA"></b></button>
+              <button type="button" role="radio" data-door="b"><span class="doors__flag mono">PY</span><b data-t="hero.doorB"></b></button>
+              <i class="doors__ink" aria-hidden="true"></i>
+            </div>
+            <h1 class="hero__title">
+              <span class="hero__pre" data-t="hero.pre"></span>
+              <span class="hero__dest display"><span class="hero__destword" data-t="hero.dest"></span></span>
+            </h1>
+            <p class="hero__sub swap" data-t="hero.sub"></p>
+            <div class="hero__actions">
+              <a href="#conversa" class="btn btn--xl" data-magnetic><span data-t="hero.cta"></span> <span aria-hidden="true">→</span></a>
+            </div>
+            <ul class="proof" data-list="proof"></ul>
+          </div>
+          <figure class="hero__photo" data-glow>
+            <img src="/img/v4-hand.webp" alt="" />
+            <figcaption class="route">
+              <span class="route__end"><small class="mono" data-t="hero.from"></small><b data-route="0"></b></span>
+              <span class="route__line" aria-hidden="true"><i></i></span>
+              <span class="route__end route__end--to"><small class="mono" data-t="hero.to"></small><b data-route="1"></b></span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 3. Faixa pessoal -->
+      <section class="meet t-light t-cream" id="conversa-pessoal">
+        <div class="wrap meet__grid" data-reveal>
+          <figure class="meet__photo" data-photo>
+            <img src="/img/gabriel.webp" alt="Gabriel Soares" loading="lazy" />
+            <span class="meet__initials display" aria-hidden="true">GS</span>
+          </figure>
+          <div class="meet__body">
+            <p class="eyebrow"><i>01</i><span data-t="meet.eyebrow"></span></p>
+            <p class="meet__text" data-t="meet.text"></p>
+            <p class="meet__sign"><b data-t="meet.name"></b><span class="mono" data-t="meet.role"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. O mercado do outro lado -->
+      <section class="market t-dark" id="mercado">
+        <div class="wrap">
+          <header class="head" data-reveal>
+            <p class="eyebrow"><i>02</i><span data-t="market.eyebrow"></span></p>
+            <h2 class="h2 swap" data-t="market.title"></h2>
+          </header>
+          <ul class="stats swap" data-list="marketStats" data-reveal></ul>
+          <div class="market__more" data-reveal>
+            <p class="market__text swap" data-t="market.text"></p>
+            <figure class="chart swap" data-chart>
+              <figcaption class="chart__title mono" data-t="market.chartTitle"></figcaption>
+              <ul class="chart__bars" data-list="chart"></ul>
+            </figure>
+          </div>
+          <p class="src mono swap" data-t="market.sources"></p>
+        </div>
+      </section>
+
+      <!-- 5. Por que tanta empresa atravessa e não vende -->
+      <section class="pains t-light" id="erros">
+        <div class="wrap">
+          <header class="head" data-reveal>
+            <p class="eyebrow"><i>03</i><span data-t="pains.eyebrow"></span></p>
+            <h2 class="h2 swap" data-t="pains.title"></h2>
+          </header>
+          <ol class="pains__list swap" data-list="pains" data-reveal></ol>
+          <p class="src mono swap" data-t="pains.sources"></p>
+        </div>
+      </section>
+
+      <!-- 6. Saber antes de executar -->
+      <section class="know t-light t-cream" id="metodo">
+        <div class="wrap know__wrap">
+          <header class="know__head" data-reveal>
+            <p class="eyebrow"><i>04</i><span data-t="know.eyebrow"></span></p>
+            <h2 class="h2" data-t="know.title"></h2>
+            <p class="know__text" data-t="know.text"></p>
+            <p class="know__hint mono"><span data-t="know.hint"></span> <i aria-hidden="true">↕</i></p>
+          </header>
+          <div class="know__right" data-reveal>
+            <ol class="steps" data-steps>
+              <li class="step" style="--w: 0.32"><b class="step__k display">P</b><span class="step__bar"><i></i><span data-t="know.steps.3"></span></span></li>
+              <li class="step" style="--w: 0.48"><b class="step__k display">E</b><span class="step__bar"><i></i><span data-t="know.steps.2"></span></span></li>
+              <li class="step" style="--w: 0.66"><b class="step__k display">T</b><span class="step__bar"><i></i><span data-t="know.steps.1"></span></span></li>
+              <li class="step" style="--w: 0.86"><b class="step__k display">S</b><span class="step__bar"><i></i><span data-t="know.steps.0"></span></span></li>
+            </ol>
+            <p class="know__out" data-steps-msg data-t="know.out"></p>
+          </div>
+          <p class="know__close" data-reveal><span data-t="know.close"></span> <i aria-hidden="true">↓</i></p>
+        </div>
+      </section>
+
+      <!-- 7. A oferta -->
+      <section class="offer t-dark" id="oferta">
+        <figure class="offer__img" aria-hidden="true"><img src="/img/war-room.webp" alt="" loading="lazy" /></figure>
+        <div class="wrap offer__inner" data-reveal>
+          <p class="offer__seal"><span class="display" data-t="offer.seal"></span><b class="mono">3.0</b></p>
+          <h2 class="h2 offer__title swap" data-t="offer.title"></h2>
+          <p class="offer__sub" data-t="offer.sub"></p>
+          <ul class="chips" data-list="chips"></ul>
+        </div>
+        <div class="offer__logos">
+          <p class="mono" data-t="offer.logos"></p>
+          <div class="marquee" aria-hidden="true"><div class="marquee__track" data-marquee></div></div>
+        </div>
+      </section>
+
+      <!-- 8. O que você recebe -->
+      <section class="deliv2 t-light" id="entregas">
+        <div class="wrap">
+          <header class="head head--center" data-reveal>
+            <p class="eyebrow"><i>05</i><span data-t="deliv.eyebrow"></span></p>
+            <h2 class="h2 swap" data-t="deliv.title"></h2>
+          </header>
+          <ul class="dcards swap" data-list="deliv" data-reveal></ul>
+          <div class="dots" data-dots aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="swipe mono" data-t="deliv.swipe"></p>
+        </div>
+      </section>
+
+      <!-- 9. Cronograma -->
+      <section class="plan2 t-light t-cream" id="cronograma">
+        <div class="wrap plan2__grid">
+          <header class="plan2__head" data-reveal>
+            <p class="eyebrow"><i>06</i><span data-t="plan.eyebrow"></span></p>
+            <h2 class="h2" data-t="plan.title"></h2>
+            <p class="plan2__days" aria-hidden="true"><b class="display">30</b><span class="mono" data-t="plan.daysLabel"></span></p>
+          </header>
+          <ol class="tl" data-list="weeks"></ol>
+        </div>
+      </section>
+
+      <!-- 10. O que é e o que não é -->
+      <section class="define t-light" id="escopo">
+        <div class="wrap">
+          <header class="head head--center" data-reveal>
+            <p class="eyebrow"><i>07</i><span data-t="define.eyebrow"></span></p>
+            <h2 class="h2" data-t="define.title"></h2>
+          </header>
+          <div class="define__grid" data-reveal>
+            <article class="def def--yes" data-tilt>
+              <p class="def__k"><i aria-hidden="true">✓</i><span data-t="define.yesK"></span></p>
+              <ul data-list="defYes"></ul>
+            </article>
+            <article class="def def--no" data-tilt>
+              <p class="def__k"><i aria-hidden="true">✕</i><span data-t="define.noK"></span></p>
+              <ul data-list="defNo"></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. Para quem foi desenhado -->
+      <section class="forwho t-red" id="para-quem">
+        <div class="wrap">
+          <header class="head" data-reveal>
+            <p class="eyebrow"><i>08</i><span data-t="forwho.eyebrow"></span></p>
+            <h2 class="h2" data-t="forwho.title"></h2>
+          </header>
+          <ul class="fw swap" data-list="forwho" data-reveal></ul>
+          <div class="forwho__close" data-reveal>
+            <p class="swap" data-t="forwho.close"></p>
+            <a href="#conversa" class="btn" data-magnetic><span data-t="hero.cta"></span> <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. Quem somos -->
+      <section class="who2 t-light" id="quem-somos">
+        <div class="wrap">
+          <header class="who2__head" data-reveal>
+            <p class="eyebrow"><i>09</i><span data-t="who.eyebrow"></span></p>
+            <h2 class="display who2__title"><span class="red" data-t="who.title.0"></span></h2>
+            <p class="who2__sub" data-t="who.title.1"></p>
+          </header>
+          <ul class="who2__stats" data-list="whoStats" data-reveal></ul>
+          <div class="who2__badges" data-reveal>
+            <p class="mono" data-t="who.badges"></p>
+            <ul class="badges2">
+              <li><img src="/logos/google-partner.png" alt="Google Partner" loading="lazy" /></li>
+              <li><img src="/logos/meta-partner.png" alt="Meta Business Partner" loading="lazy" /></li>
+              <li><img src="/logos/hubspot.webp" alt="HubSpot Certified Partner" loading="lazy" /></li>
+              <li><img src="/logos/tray.svg" alt="Tray Parceiro Diamante" loading="lazy" /></li>
+              <li><img src="/logos/kommo.webp" alt="Kommo Partner" loading="lazy" /></li>
+              <li><img src="/logos/facebook-blueprint.svg" alt="Facebook Blueprint" loading="lazy" /></li>
+            </ul>
+          </div>
+          <p class="who2__lead" data-t="who.logos"></p>
+          <div class="marquee marquee--light" aria-hidden="true"><div class="marquee__track" data-marquee></div></div>
+          <div class="affil" data-reveal>
+            <p data-t="who.affil"></p>
+            <div class="affil__logos">
+              <img src="/logos/dreamers.svg" alt="Grupo Dreamers" loading="lazy" />
+              <img src="/logos/infomoney.svg" alt="InfoMoney" loading="lazy" />
+            </div>
+          </div>
+          <p class="who2__unit" data-t="who.unit"></p>
+        </div>
+      </section>
+
+      <!-- 13. Cases -->
+      <section class="cases t-dark" id="cases">
+        <div class="wrap">
+          <header class="head" data-reveal>
+            <p class="eyebrow"><i>10</i><span data-t="cases.eyebrow"></span></p>
+            <h2 class="h2 swap" data-t="cases.title"></h2>
+          </header>
+          <div class="cases__grid" data-list="cases" data-reveal></div>
+        </div>
+      </section>
+
+      <!-- 14. Garantia -->
+      <section class="guar t-red" id="garantia">
+        <div class="wrap guar__grid" data-reveal>
+          <div class="seal" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="seal-circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+              <text><textPath href="#seal-circle" textLength="486" lengthAdjust="spacing" data-t="guarantee.seal"></textPath></text>
+            </svg>
+            <b class="display">30</b>
+          </div>
+          <div>
+            <p class="eyebrow"><i>11</i><span data-t="guarantee.eyebrow"></span></p>
+            <p class="guar__text" data-t="guarantee.text"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 15. Perguntas frequentes -->
+      <section class="faq t-light t-cream" id="perguntas">
+        <div class="wrap faq__grid">
+          <header class="faq__head" data-reveal>
+            <p class="eyebrow"><i>12</i><span data-t="faq.eyebrow"></span></p>
+            <h2 class="h2" data-t="faq.title"></h2>
+          </header>
+          <div class="faq__list" data-list="faq" data-reveal></div>
+        </div>
+      </section>
+
+      <!-- 16. Formulário -->
+      <section class="lead t-dark t-wine" id="conversa">
+        <div class="wrap lead__grid">
+          <header class="lead__head" data-reveal>
+            <p class="eyebrow"><i>13</i><span data-t="form.eyebrow"></span></p>
+            <h2 class="h2 swap" data-t="form.title"></h2>
+            <p class="lead__sub" data-t="form.sub"></p>
+            <ul class="lead__trust" data-list="trust"></ul>
+          </header>
+
+          <div class="fcard2" data-reveal>
+            <form class="form" data-form novalidate>
+              <div class="form__row">
+                <label class="fld"><span data-t="form.fields.name"></span><input name="nome" type="text" autocomplete="name" required maxlength="80" /></label>
+                <label class="fld"><span data-t="form.fields.company"></span><input name="empresa" type="text" autocomplete="organization" required maxlength="80" /></label>
+              </div>
+              <div class="form__row">
+                <label class="fld"><span data-t="form.fields.role"></span><input name="cargo" type="text" autocomplete="organization-title" required maxlength="60" /></label>
+                <label class="fld"><span data-t="form.fields.email"></span><input name="email" type="email" autocomplete="email" required maxlength="120" inputmode="email" /></label>
+              </div>
+              <div class="fld">
+                <span id="lbl-phone" data-t="form.fields.phone"></span>
+                <div class="phone">
+                  <select name="ddi" aria-label="DDI" data-ddi>
+                    <option value="+595">🇵🇾 +595</option>
+                    <option value="+55">🇧🇷 +55</option>
+                  </select>
+                  <input name="whatsapp" type="tel" autocomplete="tel-national" required inputmode="tel" maxlength="20" aria-labelledby="lbl-phone" />
+                </div>
+              </div>
+              <fieldset class="opt">
+                <legend data-t="form.fields.operates"></legend>
+                <div class="opt__row" data-opts="operates"></div>
+              </fieldset>
+              <fieldset class="opt">
+                <legend data-t="form.fields.target"></legend>
+                <div class="opt__row" data-opts="target"></div>
+              </fieldset>
+              <label class="fld"><span data-t="form.fields.segment"></span><input name="segmento" type="text" required maxlength="80" data-t-ph="form.fields.segmentPh" /></label>
+              <fieldset class="opt">
+                <legend data-t="form.fields.sells"></legend>
+                <div class="opt__row" data-opts="sells"></div>
+              </fieldset>
+              <label class="check"><input type="checkbox" name="consentimento" required /><span data-t="form.consent"></span></label>
+              <p class="form__err mono" data-form-err role="alert"></p>
+              <button type="submit" class="btn btn--xl form__go" data-magnetic><span data-t="form.submit" data-submit-label></span> <span aria-hidden="true">→</span></button>
+            </form>
+            <div class="done" data-done hidden>
+              <span class="done__ok" aria-hidden="true">✓</span>
+              <p class="done__text" data-t="form.success" tabindex="-1"></p>
+              <a class="btn btn--glass" data-wa hidden target="_blank" rel="noopener"><span data-t="form.successWa"></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 17. Rodapé -->
+    <footer class="foot2">
+      <div class="wrap">
+        <p class="foot2__big display" data-t="foot.tags.0"></p>
+        <ul class="foot2__tags mono" data-list="footTags"></ul>
+        <p class="foot2__end mono"><img src="/logos/v4.svg" alt="" width="22" height="22" /><span data-t="foot.rights"></span> · <span data-year></span></p>
+      </div>
+    </footer>
+
+    <a href="#conversa" class="dock btn" data-dock><span data-t="dock"></span> <span aria-hidden="true">→</span></a>
+
+    <script type="module" src="/src/fronteira/main.ts"></script>
+  </body>
+</html>
